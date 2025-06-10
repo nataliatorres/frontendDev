@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Paera practicar los selectores go to https://flukeout.github.io/*/
+        div p {
+            /*Todos los p que sean hijos de div*/
+            background: palegreen;
+        }
+        div > div {
+            /*Hijos directos. Osea el div que esta dentro de otro div*/
+            background: rosybrown;
+        }
+        .es {
+            /*Selector de la clase 'es'*/
+            background: red;
+        }
+        p + section {
+            /*Elemento section adyacente a un p. O sea justo la section que le sigue a p*/
+            background: palevioletred;
+        }
+        div ~ p {
+            /*Selector de elementos hermanos. Todos los elementos p que esten despues de un div*/
+            background: aquamarine;
+        }
+        main span > p {
+            /*Selector de hijo directo p del span contenido en un main*/
+            background: darkorange
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <a href="https://flukeout.github.io">Practica los selectores</a>
+            <p>Platzi</p>
+            <div class="es">Es</div>
+        </div>
+    </div>
+    <p>Clase de Selectores</p>
+    <main>
+        <p>P del main</p>
+        <section>
+            Section
+        </section>
+        <span>
+            <p>Clase de Selectores 2</p>
+        </span>
+    </main>
+    <div>
+        <p>P de un div</p>
+        <section>
+            Se pintará naranja?
+        </section>
+        <section>
+            No tengo ningun color porque mi selector es de elemento adyancente y no de general de hermanos
+        </section>
+    </div>
+    <p>Acuamarina</p>
+    <p>Soy acuamarina porque mi selector es general de hermanos</p>
+</body>
+</html>

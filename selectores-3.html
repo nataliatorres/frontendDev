@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: salmon;
+        }
+        p::first-letter {
+            color:cadetblue;
+        }
+        div p:nth-child(2) {
+            color: red;
+        }
+        p::before {
+            content: "👽";
+        }
+        p:hover {
+            color: thistle;
+        }
+        p:hover::after {
+            content: "🐨";
+        }
+        ::placeholder {
+            color: chocolate;
+        }
+        input:hover {
+            background-color: plum;
+            
+            ::placeholder {
+                color: lavender;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Como</p>
+        <p>Te</p>
+        <p>Encuentras</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>

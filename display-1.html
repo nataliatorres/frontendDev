@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div {
+            background: salmon;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        a {
+            background: skyblue;
+            /** Width and height don't work on
+            an  inline element and**/
+            width: 200px;
+            height: 200px;
+            /*Margin only applies to the sides of the element*/
+            margin: 20px;
+        }
+        button {
+            /*A button is an inline-block element, meaning
+            its visualized as an inline element but can be
+            changed like a block element*/
+            background: mediumpurple;
+            width: 150px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>Block</div>
+    <a href="/">inline</a>
+    <button>Inline-block Button</button>
+</body>
+</html>
