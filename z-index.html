@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Caterpillar</title>
+    <style>
+         div{
+            position: relative;
+        }
+        section {
+            position: relative;
+        }
+        .first {
+            z-index: 3;
+        }
+        .second {
+            z-index: 4;
+        }
+        .red {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            z-index: 5;
+        }
+        .blue {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            z-index: 4;
+        }
+        .yellow {
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            z-index: 6;
+        }
+        .sky{
+            width: 300px;
+            height: 100px;
+            background-color: lightskyblue;
+            z-index: 4
+        }
+        .ground {
+            width: 300px;
+            height: 80px;
+            background-color: yellowgreen;
+            z-index: 4;
+        }
+        .caterpillar--section-five {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            background: #32cd32;
+            background: linear-gradient(90deg, rgb(50, 205, 50) 0%, rgb(124, 252, 0) 89%);
+            z-index: 4;
+            left: 10px;
+        }
+        .caterpillar--section-four {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            background: #32cd32;
+            background: linear-gradient(90deg, rgb(50, 205, 50) 0%, rgb(124, 252, 0) 89%);
+            z-index: 5;
+            left: 40px;
+            top: 10px;
+        }
+        .caterpillar--section-three {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            background: #32cd32;
+            background: linear-gradient(90deg, rgb(50, 205, 50) 0%, rgb(124, 252, 0) 89%);
+            z-index: 6;
+            left: 70px;
+            top: -3px;
+        }
+        .caterpillar--section-two {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            background: #32cd32;
+            background: linear-gradient(90deg, rgb(50, 205, 50) 0%, rgb(124, 252, 0) 89%);
+            z-index: 7;
+            right: 150px;
+            top: -8px;
+        }
+        .caterpillar--section-one {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            background: #32cd32;
+            background: linear-gradient(90deg, rgb(50, 205, 50) 0%, rgb(124, 252, 0) 89%);
+            z-index: 8;
+            right: 120px;
+            top: 10px;
+        }
+        .caterpillar--head {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            background: #32cd32;
+            background: linear-gradient(90deg, rgb(50, 205, 50) 0%, rgb(124, 252, 0) 89%);
+            z-index: 9;
+            right: 90px;
+            top: 3px;
+        }
+        .caterpillar--antennae {
+            position: absolute;
+            z-index: 1;
+            top: -8px;
+            left: 178px;
+        }
+        .caterpillar--right-eye{
+            position: absolute;
+            width: 10px;
+            height: 13px;
+            border-radius: 30px;
+            background-color: #ffffff;
+            z-index: 10;
+            top: 10px;
+            left: 18px;
+        }
+        .caterpillar--left-eye {
+            position: absolute;
+            width: 10px;
+            height: 13px;
+            border-radius: 30px;
+            background-color: #ffffff;
+            z-index: 10;
+            top: 10px;
+            left: 30px;
+        }
+        .caterpillar--right-pupil {
+            width: 3px;
+            height: 4px;
+            border-radius: 30px;
+            background-color: #000;
+            top: 2px;
+            left: 5px;
+        }
+        .caterpillar--left-pupil {
+            width: 3px;
+            height: 4px;
+            border-radius: 30px;
+            background-color: #000;
+            top: 2px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="first">Prueba</div>
+    <div class="second">Hola</div> -->
+
+    <!-- <section>
+        <div class="red">Red</div>
+        <div class="blue">Blue
+            <div class="yellow">Yellow</div>
+        </div>
+    </section> -->
+
+    <div class="sky"></div>
+    <div class="ground">
+        <div class="caterpillar--body">
+            <section class="caterpillar--antennae">V</section>
+            <section class="caterpillar--head">
+                <section class="caterpillar--eyes">
+                    <div class="caterpillar--right-eye">
+                        <div class="caterpillar--right-pupil"></div>
+                    </div>
+                    <div class="caterpillar--left-eye">
+                        <div class="caterpillar--left-pupil"></div>
+                    </div>
+                </section>
+            </section>
+            <section class="caterpillar--section-one">1</section>
+            <section class="caterpillar--section-two">2</section>
+            <section class="caterpillar--section-three">3</section>
+            <section class="caterpillar--section-four">4</section>
+            <section class="caterpillar--section-five">5</section>
+        </div>
+    </div>
+</body>
+</html>
