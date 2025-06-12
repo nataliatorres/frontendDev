@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>px vs em? Which ons should I use?</title>
+    <style>
+        html {
+            /* font-size: 100%; */
+            /* Para que sea mas facil hacer los cálculos de
+            cuanto equivale 1rem en px, podemos hacer la equivalencia.*/
+            /* Entonces 100% = 16px  ? = 10px ----> (100*10)/16=62.5% */
+            /* font-size: 6.25%;  Esto para que 1rem equivalga a 1px */
+            font-size: 62.5%;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        }
+        p {
+            font-size: 3rem;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <div>Vamos a resolver la duda</div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A optio at alias ipsam quia accusamus unde dolores enim blanditiis fugit eum quaerat, corrupti nam et voluptatum quos earum quidem maxime.</p>
+    <div class="container"></div>
+</body>
+</html>

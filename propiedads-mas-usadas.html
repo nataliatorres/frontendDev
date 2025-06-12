@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The more you know</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        html, body {
+            height: 100%;
+        } 
+        body {
+            background-image: url("https://images.pexels.com/photos/68704/pexels-photo-68704.jpeg?_gl=1*rscx37*_ga*MjU3NjA3MDcxLjE3NDkyNzQ0MjU.*_ga_8JE65Q40S6*czE3NDk2OTQzMTAkbzUkZzEkdDE3NDk2OTQzNTAkajIwJGwwJGgw");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .title {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .card {
+            display: grid;
+            width: 700px;
+            height: 800px;
+            background-color: lavender;
+            border-radius: 30px;
+            grid-template-columns: 1fr 1fr;
+        }
+        .fact {
+            padding: 0 10px 0 20px;
+        }
+        .number {
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: plum;
+            /* line-height: 40px; also works for vertically align the number*/
+        }
+        .number p {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        p {
+            font-family: 'Poppins', sans-serif;
+        }
+        .img-container {
+            width: 200px;
+            height: 130px;
+            border-radius: 30px;
+            overflow: hidden;
+            margin: 0 0 0 20px;
+        }
+        .img-container img {
+            width: 100%;
+            /* padding: 0 10px 0 20px; */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="title">
+                <p>Facts about AUS</p>
+            </div>
+                <div class="fact">
+                    <div class="number">
+                        <p>1</p>
+                    </div>
+                    <p>If you visit one new beach in Australia every day, it would take over 27 years to see them all.</p>
+                </div>
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/15148994/pexels-photo-15148994.jpeg?_gl=1*d12ymd*_ga*MjU3NjA3MDcxLjE3NDkyNzQ0MjU.*_ga_8JE65Q40S6*czE3NDk2MjQyMDQkbzQkZzEkdDE3NDk2MjQyNTUkajkkbDAkaDA." alt="australian-beach">
+                </div>
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/568020/pexels-photo-568020.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="sheep">
+                </div>
+                <div class="fact">
+                    <div class="number">
+                        <p>2</p>
+                    </div>
+                    <p>Australia has three times more sheep than people.</p>
+                </div>
+                <div class="fact">
+                    <div class="number">
+                        <p>3</p>
+                    </div>
+                    <p>Australia is the only continent in the world without an active volcano.</p>
+                </div>
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/20119900/pexels-photo-20119900/free-photo-of-animal-hierba-cesped-pelo.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="wombat">
+                </div>
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="voting-poll">
+                </div>
+                <div class="fact">
+                    <div class="number">
+                        <p>4</p>
+                    </div>
+                    <p>Australia was the second country to give women the right to vote in 1902.</p>
+                </div>
+                <div class="fact">
+                    <div class="number">
+                        <p>5</p>
+                    </div>
+                    <p>Most of Australia's exotic flora and fauna cannot be found anywhere else in the world.</p>
+                </div>
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/2615031/pexels-photo-2615031.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="brisbane-city-centre">
+                </div>
+        </div>
+    </section>
+</body>
+</html>
